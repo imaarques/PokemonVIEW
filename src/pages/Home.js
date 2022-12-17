@@ -66,7 +66,7 @@ const Home = () => {
             .map((pokemon, key) => (
               <PokemonCard
                 name={pokemon.data.name}
-                img={pokemon.data.sprites.front_default}
+                img={pokemon.data.sprites.other.dream_world.front_default}
                 types={pokemon.data.types}
                 key={key}
               />

@@ -24,13 +24,15 @@ const Pokemon = () => {
       .then((res) => setPokemons(res));
   };
 
+  console.log(pokemons);
+
   // console.log(pokemons);
   return (
     <div className={styles.pokemon_container}>
       {pokemons.map((pokemon, key) => (
         <PokemonComponent
           name={pokemon.data.name}
-          img={pokemon.data.sprites.front_default}
+          img={pokemon.data.sprites.other.dream_world.front_default}
           types={pokemon.data.types}
           params={name}
           key={key}
