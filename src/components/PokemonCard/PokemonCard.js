@@ -24,7 +24,6 @@ export default function PokemonCard({ name, img, types, index }) {
             {type.type.name === "steel" ? "Aço" : ""}
             {type.type.name === "ice" ? "Gelo" : ""}
             {type.type.name === "ghost" ? "Fantasma" : ""}
-            {type.type.name === "ghost" ? "Fantasma" : ""}
           </span>
         ))}
       </span>

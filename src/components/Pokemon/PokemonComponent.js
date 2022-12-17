@@ -23,7 +23,6 @@ const PokemonComponent = ({ name, img, params, types }) => {
             {type.type.name === "steel" ? "Aço" : ""}
             {type.type.name === "ice" ? "Gelo" : ""}
             {type.type.name === "ghost" ? "Fantasma" : ""}
-            {type.type.name === "ghost" ? "Fantasma" : ""}
           </span>
         ))}
       </span>
