@@ -2,7 +2,7 @@ import * as React from "react";
 import styles from "./PokemonCard.module.css";
 import { Link } from "react-router-dom";
 
-export default function PokemonCard({ name, img, types }) {
+export default function PokemonCard({ name, img, types, index }) {
   const typeHandler = () => {
     if (types[1]) {
       return (
@@ -22,6 +22,7 @@ export default function PokemonCard({ name, img, types }) {
   return (
     <div className={styles.pokemon_card}>
       <Link className={styles.btn} to={`/pokemons/${name}`}>
+        <span>{index}</span>
         <img src={img} alt={name} />
       </Link>
       <div className={styles.pokemon_details}>

@@ -39,6 +39,17 @@
     background: transparent;
     border: none;
     cursor: pointer;
+    position: relative;
+}
+
+.pokemon_card .btn span {
+    font-size: 50px;
+    color: #3b0e62;
+    font-weight: 400;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    line-height: 50px;
 }
 
 .pokemon_card .btn img {
@@ -47,6 +58,10 @@
     height: 110%;
     transform: scale(1);
     transition: 0.4s ease all;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .pokemon_details {

@@ -63,12 +63,13 @@ const Home = () => {
                 .toLowerCase()
                 .includes(pokemonFilter.toLowerCase())
             )
-            .map((pokemon, key) => (
+            .map((pokemon, index) => (
               <PokemonCard
                 name={pokemon.data.name}
                 img={pokemon.data.sprites.other.dream_world.front_default}
                 types={pokemon.data.types}
-                key={key}
+                key={index}
+                index={pokemon.data.order}
               />
             ))}
         </div>
