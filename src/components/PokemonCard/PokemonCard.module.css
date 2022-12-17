@@ -54,7 +54,7 @@
 
 .pokemon_card .btn img {
     max-width: 60%;
-    max-height: 110%;
+    max-height: 85%;
     height: 110%;
     transform: scale(1);
     transition: 0.4s ease all;
